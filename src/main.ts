@@ -8,8 +8,9 @@ async function bootstrap() {
 
   app.use(helmet());
   app.enableCors({
-    origin: process.env.APP_ORIGIN || '*',
-    credentials: true,
+    origin: '*',
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
   });
   app.useGlobalPipes(
     new ValidationPipe({ whitelist: true, forbidNonWhitelisted: true, transform: true }),
