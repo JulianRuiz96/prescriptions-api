@@ -37,7 +37,7 @@ npm run start:dev
 
 ## URLs
 - API producción: https://prescriptions-api-production-0183.up.railway.app
-- Frontend: https://TU-URL.vercel.app
+- Frontend: https://prescriptions-front.vercel.apphttps://TU-URL.vercel.app
 
 ## Endpoints principales
 - POST /api/auth/login
